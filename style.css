@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Poppins&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+--Purple: hsl(259, 100%, 65%);
+--Lightred: hsl(0, 100%, 67%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: var(--Lightgrey);
+}
+main{
+    display: flex;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+    width: 600px;
+    height: 500px;
+}
+form{
+    display: flex;
+    gap: 2rem;
+    padding: 10px;
+}
+label{
+    display: flex;
+    color: hsl(0, 1%, 44%);
+}
+input{
+    height: 50px;
+    width: 110px;
+    border: 1px solid hsl(0, 1%, 44%);
+    outline: none;
+    border-radius: 10px;
+    font-size: 32px;
+    display: flex;
+}
+.linear{
+    height: 1px;
+    width: 200px;
+    background-color: hsl(0, 1%, 44%);
+   
+}
+img{
+    background-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.submit-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.submit-btn img:hover{
+    background: var(--Offblack);
+    color: hsl(0, 0%, 100%);
+}
+.submit-s{
+    display: flex;
+    align-items: center;
+    
+}
+.submit-s .linear{
+    width: 400px;
+    
+}
+
+.content span{
+    color: hsl(259, 100%, 65%);
+
+}
+.content{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+    
+}
+.content h1{
+    height: 100px;
+    margin-top: -3rem;
+    margin-left: -7rem;
+}
+small{
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    .submit-s{
+        width: 300px;
+    }
+    .content{
+        width: 219px;
+        margin-top: 2rem;
+        margin-left: 9rem;
+        font-size: 21px;
+    }
+    .container{
+        width: 300px;
+    }
+    input{
+        width: 75px;
+        font-size: 20px;
+    }
+}
